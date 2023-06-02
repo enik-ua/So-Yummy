@@ -14,7 +14,7 @@ describe('Registration', function () {
     await driver.quit();
   });
   it('Registration', async function () {
-    await driver.get('https://dmytro1117.github.io/So-Yummy/signin');
+    await driver.get('https://enik-ua.github.io/So-Yummy/signin');
     await driver.manage().window().setRect({ width: 1008, height: 600 });
     await driver.findElement(By.id('standard-required-register-email')).click();
     await driver
@@ -25,6 +25,23 @@ describe('Registration', function () {
       .findElement(By.id('standard-required-register-pass'))
       .sendKeys('255106A');
     await driver.findElement(By.css('.Button_normalButton__LD1hz')).click();
+    await driver.findElement(By.linkText('Categories')).click();
+    {
+      const element = await driver.findElement(By.linkText('Categories'));
+      await driver.actions({ bridge: true }).moveToElement(element).perform();
+    }
+    {
+      const element = await driver.findElement(By.CSS_SELECTOR, 'body');
+      await driver
+        .actions({ bridge: true })
+        .moveToElement(element, 0, 0)
+        .perform();
+    }
+    await driver
+      .findElement(By.css('.MuiButtonBase-root:nth-child(5)'))
+      .click();
+    await driver.findElement(By.id('path4')).click();
+    await driver.findElement(By.css('#SVGRepo_iconCarrier > path')).click();
     // await driver.get('https://dmytro1117.github.io/So-Yummy/register');
     // await driver
     //   .findElement(By.id('standard-required-register-name'))
