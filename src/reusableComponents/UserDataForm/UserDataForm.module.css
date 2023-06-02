@@ -1,0 +1,31 @@
+.confirmButton {
+  max-width: 279px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.notification {
+  text-align: center;
+  margin: 9px auto;
+  font-size: 14px;
+  height: 16px;
+  display: block;
+  color: var(--whiteColor);
+  border: none;
+  background-color: transparent;
+  transition: color 500ms ease;
+}
+.notification:hover,
+.notification:focus {
+  color: var(--greenColor);
+}
+@media screen and (min-width: 768px) {
+  .confirmButton {
+    max-width: 400px;
+    height: 56px;
+  }
+
+  .notification {
+    margin: 17px auto;
+  }
+}

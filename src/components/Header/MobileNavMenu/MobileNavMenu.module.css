@@ -1,0 +1,43 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--ingridientsBcg);
+  background-image: url('../../../assets/images/BurgerMenu/background.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 10000;
+  animation-name: slide-down;
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url('../../../assets/images/BurgerMenu/backgroundTab.png');
+  }
+}
+.logoWrapper {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.mobNavBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}

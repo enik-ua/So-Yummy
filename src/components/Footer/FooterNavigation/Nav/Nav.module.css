@@ -1,0 +1,19 @@
+.navCentre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+
+.navCentre > :not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .navCentre > :not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

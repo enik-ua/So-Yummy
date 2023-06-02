@@ -1,0 +1,33 @@
+.navLink {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  stroke: var(--secondaryBlackColor);
+}
+.navLink:hover {
+  color: var(--greenColor);
+  stroke: var(--greenColor);
+}
+
+@media screen and (min-width: 768px) {
+  .navLink {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.glassWrapper {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .glassWrapper {
+    top: 0;
+    left: -5px;
+  }
+}

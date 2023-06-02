@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: var(--greenColor);
+  width: 107px;
+  height: auto;
+  min-height: 23px;
+  padding: 5px;
+  color: var(--whiteColor);
+  font-size: 10px;
+  line-height: 15px;
+  border-radius: 4px;
+  margin-right: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 158px;
+    min-height: 36px;
+    margin-right: 18px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 250px;
+    min-height: 35px;
+    font-size: 18px;
+    margin-right: 80px;
+  }
+}

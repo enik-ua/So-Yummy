@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 119px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 134px;
+  }
+}
+
+.light * {
+  fill: var(--greenColor);
+}
+
+.light:hover * {
+  fill: var(--linksHoverColor);
+}
+
+.dark * {
+  fill: var(--greenColor);
+}
+
+.dark:hover * {
+  fill: var(--whiteColor);
+}
+
+.green * {
+  fill: var(--whiteColor);
+}
+
+.green:hover * {
+  fill: var(--linksHoverColor);
+}
+
+.li {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.instagramm {
+  width: 17px;
+  height: 17px;
+}
+@media screen and (min-width: 768px) {
+  .instagramm {
+    width: 20px;
+    height: 20px;
+  }
+}

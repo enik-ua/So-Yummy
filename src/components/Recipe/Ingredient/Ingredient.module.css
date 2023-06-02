@@ -1,0 +1,42 @@
+.thumb {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .thumb {
+    margin-bottom: 24px;
+  }
+}
+.thumb:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 343px;
+  height: 86px;
+  padding: 10px;
+  padding-right: 29px;
+  background-color: var(--ingridientsBcg);
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 704px;
+    height: 178px;
+    padding: 16px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 1240px;
+    height: 182px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+  }
+}
